@@ -4,3 +4,74 @@
     font-weight: bold;
     transition: 20ms;
 }
+header main{
+    padding: 30px 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.p-head{
+    font-size: 48px;
+    font-weight: 700;
+}
+/* about section */
+.about{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding: 80px 0;
+}
+.about p{
+    opacity: .8;
+}
+
+.paragraph{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.paragraph p{
+    line-height: 30px;
+}
+.about .icon-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .icon-section .card{
+    width: 240px;
+    height: 94px;
+}
+.about .icon-section .card h2{
+    font-size: 48px;
+    font-weight: 900;
+    color: rgba(0, 255, 136, 1);
+}
+@media  screen and (max-width:640px) {
+    /* about section responsive */
+    .container{
+        width: 90%;
+    }
+    .about{
+        padding: 40px 0;
+        gap: 80px;
+    }
+    .paragraph{
+        gap: 30px;
+    }
+    .paragraph p{
+    line-height: 20px;
+    }
+    .about .icon-section{
+        justify-content: center;
+        gap: 20px;
+    }
+    .about .icon-section .card{
+        width: 180px;
+
+    }
+    
+}
