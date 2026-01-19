@@ -75,7 +75,7 @@ header main{
     justify-content: center;
     align-items: flex-start;
 }
-.gridsection div h2{
+.gridsection div h2,.info h2{
     font-size: 24px;
     font-weight: 700;
     margin: 10px 0;
@@ -95,7 +95,40 @@ header main{
 .card5{
     grid-area: resources;
 }
-
+/* featured section */
+.featured{
+    padding-top:110px ;
+    width: 95%;
+}
+.video-cards{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.video-cards .card{
+    margin: 30px 0;
+    width: 360px;
+    height: 470px;
+    background: rgba(37, 13, 68, 1);
+    border-radius: 24px;
+    position: relative;
+}
+.card iframe{
+    border-radius: 24px 24px 0 0;
+}
+.card .info{
+    padding: 24px;
+    
+}
+.info span{
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    bottom: 10px;
+}
 @media  screen and (max-width:640px) {
     .p-head{
         font-size: 32px;
@@ -133,5 +166,9 @@ header main{
         "global"
         "interviews"
         "resources";
+    }
+    /* .featured section */
+    .featured{
+        padding: 40px 20px;
     }
 }
