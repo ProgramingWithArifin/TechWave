@@ -20,7 +20,23 @@
             <button class="flex items-center gap-1 px-4 py-3 bg-gradient-to-bl from-violet-500 via-pink-600 to-yellow-500 rounded-[10000px] font-semibold max-sm:hidden">Subscribe <img class="w-5 h-5" src="./assets/ArrowRight.png" alt=""></button>
             <div class="w-6 hidden max-sm:block "><img src="./assets/hamburger-menu.png" alt=""></div>
         </nav>
-        <main>
+        <main class="w-full h-screen  bg-[url(./assets/hero-bg.png)] bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col gap-10">
+            <div class="image bg-[url(./assets/hero-circle.png)] relative w-[350px]
+            h-[350px]">
+                <span class="absolute top-3 right-6 text-black bg-green-400 shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)] rounded-[10000px] text-lg font-semibold px-4 py-2">New</span>
+                <img src="./assets/microphone.png" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            </div>
+            <div class="content flex flex-col items-center gap-10">
+                <h1 class="text-6xl font-extrabold">TechWave</h1>
+                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <div class="buttongroup">
+                    <button class="flex items-center gap-1 px-4 py-3 bg-gradient-to-bl from-violet-500 via-pink-600 to-yellow-500 rounded-[10000px] font-semibold max-sm:hidden"><img class="w-5 h-5" src="./assets/spotify.png" alt="">Listen on Spotify</button>
+                    <button>
+                        <img src="./assets/message.png" alt="">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
         </main>
     </header>
 </body>
