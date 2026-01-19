@@ -1,0 +1,7 @@
+/* nav hover */
+.menuiteam:hover{
+    font-size: 18px;
+    font-weight: bold;
+    transition: 20ms;
+}
+/* nav responsive */
