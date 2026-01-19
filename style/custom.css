@@ -14,6 +14,7 @@ header main{
 .p-head{
     font-size: 48px;
     font-weight: 700;
+    text-align: center;
 }
 /* about section */
 .about{
@@ -23,8 +24,8 @@ header main{
     gap: 150px;
     padding: 80px 0;
 }
-.about p{
-    opacity: .8;
+.about p,.gridsection div p{
+    opacity: .6;
 }
 
 .paragraph{
@@ -41,16 +42,64 @@ header main{
     justify-content: space-between;
     align-items: center;
 }
-.about .icon-section .card{
+/* .about .icon-section .card{
     width: 240px;
     height: 94px;
-}
+} */
 .about .icon-section .card h2{
     font-size: 48px;
     font-weight: 900;
     color: rgba(0, 255, 136, 1);
 }
+
+/* why choose section */
+.choose{
+    padding: 110px  10%;
+    background: rgba(35, 14, 61, 1);
+}
+.gridsection{
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas:
+    "quality mobile mobile"
+    "quality global global"
+    "interviews interviews resources";
+    gap: 30px;
+}
+.gridsection div{
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.gridsection div h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.card1{
+    grid-area: quality;
+}
+.card2{
+    grid-area: mobile;
+}
+.card3{
+    grid-area: global;
+}
+.card4{
+    grid-area: interviews;
+}
+.card5{
+    grid-area: resources;
+}
+
 @media  screen and (max-width:640px) {
+    .p-head{
+        font-size: 32px;
+    }
     /* about section responsive */
     .container{
         width: 90%;
@@ -66,12 +115,20 @@ header main{
     line-height: 20px;
     }
     .about .icon-section{
-        justify-content: center;
+        display: grid;
         gap: 20px;
+        grid-template-columns: 1fr 1fr;
     }
-    .about .icon-section .card{
-        width: 180px;
-
+    /* why choose section */
+    .choose{
+        padding: 40px 20px;
     }
-    
+    .gridsection{
+        grid-template-areas:
+        "quality" 
+        "mobile"
+        "global"
+        "interviews"
+        "resources";
+    }
 }
