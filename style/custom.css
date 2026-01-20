@@ -1,3 +1,4 @@
+
 body{
     background-color: #1A0B2E;
 }
@@ -185,37 +186,39 @@ footer{
     height: 412px;
 
 }
-.content{
+footer .content{
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 115px;
+    padding: 0 115px;
+    height: 100%;
     align-items: center;
     flex-direction: column;
 }
-.content h1{
+footer .content h1{
     font-size: 50px;
     font-weight: 800;
 }
-.content .icons{
+footer .content .icons{
     display: flex;
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
 }
-.content .icons a{
+footer .content .icons a{
     display: flex;
     gap: 8px;
 }
-.content .icons a img{
+footer .content .icons a img{
     width: 24px;
     height: 24px;
 }
-.content p{
+footer .content p{
     opacity: .6;
 }
-.content>p{
+footer .content>p{
     margin-top: 25px;
+    text-align: center;
 }
 @media  screen and (max-width:640px) {
     .p-head{
@@ -273,5 +276,9 @@ footer{
     }
     .host{
         margin: 40px auto;
+    }
+    footer{
+        height: 444px;
+        
     }
 }
