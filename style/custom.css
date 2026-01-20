@@ -26,13 +26,15 @@ header main{
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 70px;
     padding: 80px 0;
 }
 .about p,.gridsection div p{
     opacity: .6;
 }
-
+hr{
+    opacity: .4;
+}
 .paragraph{
     padding-top: 20px;
     display: flex;
@@ -121,6 +123,7 @@ header main{
     border-radius: 24px;
     position: relative;
 }
+
 .card iframe{
     border-radius: 24px 24px 0 0;
 }
@@ -136,6 +139,11 @@ header main{
     gap: 4px;
     position: absolute;
     bottom: 10px;
+    align-items: center;
+}
+.info span img{
+    width: 20px;
+    height: 20px;
 }
 /* host section  */
 .host{
